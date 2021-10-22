@@ -1,3 +1,7 @@
+PLEASE NOTE:
+This is a fork of original by Josh Martens (https://github.com/ibrokemycomputer). It is only here for reference for the Gnome Extensions site (https://extensions.gnome.org/extension/3237/ssh-quick-connect/) for my upload of Gnome 40 compatible changes that Josh made but did not upload for quick/easy install/remove.
+
+ORIGINAL README:
 # Overview
 
 Lists entries from your `~/.ssh/config` file, and launches them in the default terminal when clicked.
