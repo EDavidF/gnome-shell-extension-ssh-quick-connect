@@ -1,5 +1,6 @@
 PLEASE NOTE:
-This is a fork of original by Josh Martens (https://github.com/ibrokemycomputer). It is only here for reference for the Gnome Extensions site (https://extensions.gnome.org/extension/3237/ssh-quick-connect/) for my upload of Gnome 40 compatible changes that Josh made but did not upload for quick/easy install/remove.
+This is a fork of original by Josh Martens (https://github.com/ibrokemycomputer). It is only here so I could upload to the Gnome Extensions site (https://extensions.gnome.org/extension/3237/ssh-quick-connect/) the Gnome 40 compatible changes that Josh made but did not upload for quick/easy install/remove.
+My changes are in the metadata file - name, uuid, etc, plus adding the screenshot here.
 
 ORIGINAL README:
 # Overview
