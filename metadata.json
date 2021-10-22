@@ -1,7 +1,7 @@
 {
   "uuid": "ssh-quick-connect@ibrokemy.computer",
   "name": "SSH Quick Connect",
-  "description": "This extension puts an icon in the panel with a simple dropdown menu that launches items from your ~.ssh/config. This is a fork of original by Josh Martens (https://extensions.gnome.org/extension/3237/ssh-quick-connect/) for Gnome 40 compatible changes that Josh made but did not upload here for quick/easy install/remove. Besides this description and version number, no changes were made.",
+  "description": "This extension puts an icon in the panel with a simple dropdown menu that launches items from your ~.ssh/config. This is a fork of original by Josh Martens (https://extensions.gnome.org/extension/3237/ssh-quick-connect/) for Gnome 40 compatible changes that Josh made but did not upload here for quick/easy install/remove. Besides this description, uuid, and version number, no changes were made.",
   "version": 1.0,
   "shell-version": [
     "3.36",
