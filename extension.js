@@ -21,6 +21,10 @@ let SSHQuickConnect = class SSHQuickConnect extends PanelMenu.Button {
     super._init(0.0, `${Me.metadata.name} Indicator`, false);
 
     this.createIcon();
+    this.reload();
+  }
+
+  reload() {
     // Get ~/.ssh/config as string
     const hostString = GLib.spawn_command_line_sync("cat " + GLib.get_home_dir() + "/.ssh/config")[1].toString();
     // Parse string into array of Hosts
@@ -29,13 +33,17 @@ let SSHQuickConnect = class SSHQuickConnect extends PanelMenu.Button {
                 .filter(item => item.indexOf('Host ') === 0)
                 .map(item => item = item.split('Host ')[1]);
 
-    // Add listeners  
+    this.menu.removeAll();
+
+    this.menu.addAction('RELOAD', e => this.reload());
+
+    // Add listeners
     this.hosts.forEach(item => {
       this.menu.addAction(item, e => this.sshToItem(item));
     });
 
   }
-  
+
   /**
    * Spawns a subprocess that opens the defualt terminal and runs `ssh ${item}`
    * @param {String} item The Host to ssh into
